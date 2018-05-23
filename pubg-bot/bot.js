@@ -3,7 +3,7 @@ var auth = require('./auth.json');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const mongoUtil = require('../pubg-api/mongoUtil.js');
+const mongoUtil = require('./mongoUtil.js');
 const mc = new mongoUtil(auth.dbClient, "pubg");
 
 
